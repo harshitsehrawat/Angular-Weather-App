@@ -7,6 +7,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
+<h1>Weather for Different Countries</h1>
+<div class="d-flex justify-content-center">
+<div class="spinner-border" role="status" >
+    <span class="sr-only" id="loading">Loading...</span>
+</div>
+</div>
+<table class="table" id='tab'>
+    <thead>
+    <tr>
+        <th scope="col">Name</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let e of lis;">
+      <ahref><td>{{ e.name }}</td></ahref>
+    </tr>
+    </tbody>
+</table>     
 <body>
   <app-root></app-root>
 </body>
